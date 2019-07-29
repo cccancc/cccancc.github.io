@@ -1,4 +1,6 @@
-
+.mdl-layout__header {
+   background:linear-gradient(to right, rgba(65,92,221,1) 0%, rgba(112,116,225,1) 7%, rgba(138,125,194,1) 21%, rgba(149,127,189,1) 56%, rgba(195,139,184,1) 94%, rgba(213,139,152,1) 100%);
+}
  blockquote {
      color: #828282;
      border-left: 4px solid #828282;
