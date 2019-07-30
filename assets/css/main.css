@@ -1,155 +1,180 @@
 header .mdl-layout__header-row {
-   background:linear-gradient(to right, rgb(63, 81, 181) 0%, rgb(63, 81, 181) 7%, rgba(138,125,194,1) 21%, rgba(149,127,189,1) 56%, rgba(195,139,184,1) 94%, rgba(213,139,152,1) 100%) !important;
+    background: linear-gradient(to right, rgb(63, 81, 181) 0%, rgb(63, 81, 181) 7%, rgba(138, 125, 194, 1) 21%, rgba(149, 127, 189, 1) 56%, rgba(195, 139, 184, 1) 94%, rgba(213, 139, 152, 1) 100%) !important;
 }
- blockquote {
-     color: #828282;
-     border-left: 4px solid #828282;
-     font-size: 18px;
-     letter-spacing: -1px;
-     font-style: italic;}
- 
-     blockquote> :last-child {
-         margin-bottom: 0;
-     }
 
-     .radar-panel {
-      height: 196px ;
-      width: 382px ;
-    }
-    .bar-panel{
-      height: 256px ;
-      width: 422px ;
-    }
- 
- /**
+blockquote {
+    color: #828282;
+    border-left: 4px solid #828282;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+}
+
+blockquote> :last-child {
+    margin-bottom: 0;
+}
+
+.radar-panel {
+    height: 196px;
+    width: 382px;
+}
+
+.bar-panel {
+    height: 256px;
+    width: 422px;
+}
+
+
+/**
   * Code formatting
   */
- pre,
- code {
-     font-size: 15px;
-     border: 1px solid lighten(#828282, 40%);
-     border-radius: 3px;
-     background-color: #eef;
- }
- 
- code {
-     padding: 1px 5px;
- }
- 
- pre {
-     padding: 8px 12px;
-     overflow-x: scroll;}
- 
-    pre > code {
-         border: 0;
-         padding-right: 0;
-         padding-left: 0;
-     }
- 
- 
- /**
+
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid lighten(#828282, 40%);
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+}
+
+pre>code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+/**
   * Clearfix
   */
- .clearfix :after {
-         content: "";
-         display: table;
-         clear: both;
-     }
- 
- 
- /**
+
+.clearfix :after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/**
   * Icons
   */
- .icon  > svg {
-         display: inline-block;
-         width: 16px;
-         height: 16px;
-         vertical-align: middle;}
- 
-    
- 
-         /*
+
+.icon>svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+}
+
+.li-card {
+    display: contents;
+}
+
+
+/*
          // Styles for post
          */
-         
-         .post-ribbon {
-           width: 100%;
-           height: 40vh;
-           background-color: #DDDDDD;
-           flex-shrink: 0;
-         }
-         
-         .post-main {
-           margin-top: -35vh;
-           -webkit-flex-shrink: 0;
-           -ms-flex-negative: 0;
-           flex-shrink: 0;}
-         
-          .post-main .post-container {
-             max-width: 1600px;
-             width: calc(100% - 16px);
-             margin: 5rem auto;
-           }
-         
-           .post-main .post-section {
-             border-radius: 2px;
-             padding: 80px 56px;
-             margin-bottom: 80px;}
-         
-             .post-main .post-section  h3 {
-               margin-top: 48px;
-             }
-           
-         
-             .post-main .post-section  .post-content img {
-               width: 100%;
-               height: auto;
-             }
-           
-         /*layout*/
 
-.page-content{
-  max-width: 1200px;
-  margin: 3rem auto;
+.post-ribbon {
+    width: 100%;
+    height: 40vh;
+    background-color: #DDDDDD;
+    flex-shrink: 0;
 }
 
-.mdl-card  .mdl-card__title {
+.post-main {
+    margin-top: -35vh;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.post-main .post-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 5rem auto;
+}
+
+.post-main .post-section {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+
+.post-main .post-section h3 {
+    margin-top: 48px;
+}
+
+.post-main .post-section .post-content img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*layout*/
+
+.page-content {
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.mdl-card .mdl-card__title {
     color: #fff;
     height: 176px;
-   
-  }
+}
 
-  .mdl-card .mdl-card__supporting-text > span { color: #9F9F9F; }
+.mdl-card .mdl-card__supporting-text>span {
+    color: #9F9F9F;
+}
 
-  .mdl-card.mdl-card__menu {
+.mdl-card.mdl-card__menu {
     color: #fff;
-  }
-
-
-.post-button{
-  position: absolute;
-  right: 15px;
-  bottom: 25px;
 }
 
-.mdl-list, .mdl-list__item{
-  font-weight: bold;
+.post-button {
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
 }
-.mdl-list__item-text-body{
-  margin-left: 1rem;
-  font-size: 9.5pt;
+
+.mdl-list,
+.mdl-list__item {
+    font-weight: bold;
+    padding: 0 10px;
+    min-height: 18px;
 }
-.person-card{
-  text-align: center;
-  font-weight: bold; 
-  padding: -10px;
-  margin: 1rem;
+
+.mdl-list__item-text-body {
+    font-size: 9.5pt;
 }
+
+.person-card {
+    text-align: center;
+    font-weight: bold;
+    padding: -10px;
+    margin: 1rem;
+}
+
 .section-highlight {
-  position: relative;
-  margin: 10px;}
+    position: relative;
+    margin: 10px;
+}
 
-  .section-highlight .mdl-card__supporting-text {
+.section-highlight .mdl-card__supporting-text {
     margin: 0;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -158,16 +183,16 @@ header .mdl-layout__header-row {
     padding: 0;
     color: inherit;
     width: calc(100% - 1px);
-  }
+}
 
-  .section-highlight .mdl-card__actions {
+.section-highlight .mdl-card__actions {
     border-top: 1px solid rgba(0, 0, 0, 0.12);
     margin: 0;
     padding: 4px 20px;
     color: inherit;
-  }
+}
 
-  .section-highlight  header {
+.section-highlight header {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -181,19 +206,29 @@ header .mdl-layout__header-row {
     -ms-flex-pack: center;
     justify-content: center;
     min-height: 280px;
- 
-  }
+}
 
-  .section-highlight  button {
+.section-highlight button {
     position: absolute;
     z-index: 99;
     bottom: 8px;
     left: 8px;
-  }
-  .image{
+}
+
+.image {
     background: url('../img/image.png') center /cover !important;
-  }
+}
 
+.pad-fix {
+    padding: 0 !important;
+    height: 220px;
+}
 
+.readmeBtn {
+    margin-left: 40%;
+}
 
-         
+.p-brief {
+    font-size: 14pt;
+    line-height: 1rem;
+}

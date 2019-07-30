@@ -1,14 +1,22 @@
 ---
 layout: post
 title:  "Personal Skill Overview"
-date:   2019-07-11 04:34:20
-categories: GDG
+subtitle: "My Working Experience"
+date:   2019-07-11
+duration: "2014~2019"
 highlight: true
 image: ../img/image.png
 ---
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+I am an IBMer in Wuhan CIC. I am engaging in learning newest techniques and excellent open source for problem-soving. 
+I believe that my skill and design thinking can provide high value of user experience.
 
-![Dev Image](../img/image.png)
+```mermaid
+graph TD;
+    A-->B123123123123123123123123123123123123123123123;
+    A-->C;
+    B-->D;
+    C-->D;
+```
 
 Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
 
