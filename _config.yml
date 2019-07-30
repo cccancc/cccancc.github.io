@@ -15,6 +15,9 @@ dribbble_username: cccancc
 header_type: default  # values [ drawer, default ]
 post_type: highlight    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
+# import Chart.js
+head_scripts: https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js
+gems: [jekyll-mermaid]
 
 more_vert:
   option1:
@@ -23,12 +26,13 @@ more_vert:
   option2:
     name: Cool Option 2
     link: www.myawesomelink.com
-  option3:
+  option3: 
     name: Cool Option 3
     link: www.myawesomelink.com
 
 disqus: true
 disqus_shortname: 'gdgmanagua'
-
+mermaid:
+  src: 'path/to/mermaid.js'
 # Build settings
 markdown: kramdown

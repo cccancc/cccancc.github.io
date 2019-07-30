@@ -27,11 +27,23 @@ layout: default
 </ul>
 </div>
 </div>
-        
-       
+
+    
       <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
         <div class="mdl-card__supporting-text">
-          <h4>{{ post.title }}</h4>
+          <h4 class="person-card">{{ post.title }}</h4>
+          <div class="mdl-grid">
+          <div class=" mdl-cell radar-panel">
+          <canvas id="radar-chart" ></canvas>
+   
+          
+          </div><!-- Number badge -->
+          <div class="mdl-cell bar-panel">
+            <canvas id="bar-chart" ></canvas>
+
+
+      </div>
+          </div>
           <p>{{ post.excerpt }}</p>
           <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
 

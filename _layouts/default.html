@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    <!-- Start Layout -->
-    {% if site.header_type == 'drawer' %}
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
-      {% include search_result.html %}
-      {% include header.html %}
+  <!-- Start Layout -->
+  {% if site.header_type == 'drawer' %}
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+    {% include search_result.html %}
+    {% include header.html %}
     {% else %}
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       {% include search_result.html %}
       {% include header.html %}
-    {% endif %}
+      {% endif %}
 
-    {{ content }}
-    {% include footer.html %}
+      {{ content }}
+      {% include footer.html %}
 
     </div>
     <!-- /End Layout -->
@@ -28,13 +28,115 @@
     <script rel="javascript" type="text/javascript" src="{{ "/assets/js/site.js" | prepend: site.baseurl }}"></script>
     {% endif %}
     <script rel="javascript" type="text/javascript" src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
     <script rel="javascript" type="text/javascript">
       superSearch({
         searchFile: '/feed.xml',
         inputSelector: '#js-search__input', // CSS selector for <input>
         resultsSelector: '#js-search__results' // CSS selector for results container
       });
+      // radar chart
+      var notations = {
+        0: "no",
+        1: "Theory",
+        2: "Proficient",
+        3: "Great",
+        4: "Outstanding",
+      }
+
+      new Chart(document.getElementById("radar-chart"), {
+        type: 'radar',
+
+        data: {
+          labels: ["HTML/CSS", "JS,Pyhton & Java", "Angular, Vue & Node", "UI/UX", "MySQL/NoSQL", "Github & Gitlab", "DevOps", "Agile"],
+          datasets: [{
+            fill: true,
+            backgroundColor: "rgba(51,133,255,0.2)",
+            borderColor: "rgba(51,133,255,1)",
+            pointBorderColor: "#fff",
+            pointBackgroundColor: "rgba(51,133,255,1)",
+            data: [5, 4, 5, 5, 3, 4, 4, 4]
+          }]
+        },
+
+        options: {
+          scale: {
+            responsive: true,
+            ticks: {
+              display: false,
+              min: 0,
+              beginAtZero: true,
+              max: 5,
+              userCallback: function (value, index, values) {
+                if (typeof notations[value] != "undefined") {
+                  return notations[value];
+                }
+                else {
+                  return value;
+                }
+              },
+            },
+
+            gridLines: {
+              display: true,
+              color: [
+                "#e8e8e8",
+
+              ],
+            },
+
+            angleLines: {
+              display: true,
+              color: "#e8e8e8",
+              lineWidth: 1,
+              borderDash: [],
+              borderDashOffset: 0.0
+            },
+            pointLabels: {
+              // callback: function(value, index, values) {
+              //     return '$' + value;
+              // }
+              fontColor: ("#312a26"),
+              fontSize: 14,
+            },
+          },
+          legend: {
+            display: false,
+          },
+          
+          title: {
+            display: false,
+            text: 'Skill Radar Chart',
+            fontSize:15,
+          },
+        }
+      });
+
+// Bar chart
+new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["Angular.6+", "Vue.2+", "Bootstrap", "Sketch/Figma","SPSS","Travis","Jenkins","CouchDB","Pagerduty","Linux/Shell","SQL","Node.js"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#607d8b","#757575","#ec407a","#303f9f","#795548","#ff5722","#e1bee7"],
+          data: [8,5,8,9,8,7,7,6,8,6,5,4]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Degree of Framework or Tool'
+      }
+    }
+});
+
     </script>
-  </body>
+</body>
 
 </html>
