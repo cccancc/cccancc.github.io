@@ -5,7 +5,7 @@ name: "Can Chen (Cecily)"
 description: > # this means to ignore newlines until "baseurl:"
  This page is about the my personal experience and UI/UX design works. All materials are only for personal use.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https:/cccancc.github.io.com" # the base hostname & protocol for your site
+url: "https://cccancc.github.io.com" # the base hostname & protocol for your site
 #url: "127.0.0.1:4000" # the base hostname & protocol for your site
 wechat_username: 394708994
 github_username:  cccancc
