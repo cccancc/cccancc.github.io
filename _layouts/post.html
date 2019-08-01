@@ -12,9 +12,11 @@ layout: default
       </div>
       <h3>{{ page.subtitle }}</h3>
       <article class="post-content">
-        <p>{{ content }}</p>
+        {{ content }}
       </article>
-
+     <button class="mdl-button" >
+          <a href="{{ site.url | prepend: site.baseurl }}">Back to main page</a>
+        </button>
     </div>
   </div>
 </main>
