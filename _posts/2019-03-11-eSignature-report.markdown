@@ -6,6 +6,7 @@ date:   2019-03-11
 duration: Mar.2019 ~ Jun.2019
 categories: Material
 author: Cecily
+image: ../assets/img/esignaturereport.png
 ---
 ![Demo](../assets/img/esignaturereport.png)
 
