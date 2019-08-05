@@ -23,7 +23,9 @@ blockquote> :last-child {
     height: 256px;
     width: 422px;
 }
-
+.mdl-card__title{
+    max-height: 200px;
+}
 
 /**
   * Code formatting
